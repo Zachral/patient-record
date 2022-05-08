@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="journalmall.css">
+  <title>Journalmall</title>
+</head>
+  <body>
+
+<form id="patient-record" action="">
+
+ 
+  <label for="therapy">Vilken typ av system har patienten?</label>
+  <br>
+  <select name="therapy" id="therapy" class="form-control-dropdown" required>
+    <option value="scs">Ryggmärgsstimulering (scs)</option>
+    <option value="drg">Dorsalrotsgangliestimulering (DRG)</option>
+    <option value="ons">Occipitalnervstimulering (ONS)</option>
+    <option value="reactiv8">Återuppbyggande av muskelfunktion (Reaciv8)</option>
+    <option value="subcutan">Subcutanstimulering</option>
+  </select>
+  <br>
+ <label for="ipg">Vilken IPG?</label>
+  <br>
+  <select name="ipg" id="ipg" class="form-control-dropdown" required>
+    <option value="drg">Abbott Proclaim DRG</option>
+    <option value="xr5">Abbott Proclaim XR 5</option>
+    <option value="xr7">Abbott Proclaim XR 7</option>
+    <option value="prodigy">Abbott Prodigy</option>
+    <option value="eon">Abbott Eon Mini</option>
+    <option value="senza">Nevro Senza</option>
+    <option value="omnia">Nevro Omnia</option>
+    <option value="reactiv8">Mainstay Reactiv8</option>
+    <option value="itrel">Medtronic Itrel4</option>
+    <option value="vanta">Medtronic Vanta</option>
+    <option value="evoke">Saluda EVOKE</option>
+    </select>
+  <br>
+<div class="form-group">
+      <label for="number-of-leads">Hur många elektroder</label>
+      <br>
+      <select name="number-of-leads" id="number-of-leads" class="form-control-dropdown" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+</div>
+<label for="lead">Vilken elektrod?</label>
+<br>
+<select name="lead" id="lead" class="form-control-dropdown" required>
+  <option value="octrode30">Abbott Octrode 30cm</option>
+  <option value="octrode60">Abbott Octrode 60cm</option>
+  <option value="octrode90">Abbott Octrode 90cm</option>
+  <option value="slimtip">Abbott Slimtip</option>
+  <option value="nevro">Nevro lead 70cm</option>
+  <option value="mainstay">Mainstay 4-contact lead</option>
+  <option value="Vectris">Medtronic Vectris</option>
+  <option value="vanta">Medtronic Vanta</option>
+  <option value="evoke">Saluda EVOKE lead 60cm</option>
+  </select>
+  <br>
+  <div class="form-group">
+        <label for="extention">Används en förlägning</label>
+        <br>
+        <select name="extention" id="extention" class="form-control-dropdown" required>
+          <option value="yes">Ja</option>
+          <option value="no">nej</option>
+        </select>
+  </div>
+  <div class="form-group">
+        <label for="impedance">Hur ser impedanserna ut?</label>
+        <br>
+        <select name="impedance" id="impedance" class="form-control-dropdown" required>
+          <option value="1">Utan anmärkning</option>
+          <option value="2">Med anmärkning</option>
+        </select>
+  </div>
+  <div class="form-group">
+    <label id="current" for="current">Hur mycket ström är kvar i IPGn?</label>
+    <input type="text" name="current" id="current" class="form-control" placeholder="">
+    </input>
+  </div>
+      <button type="submit" id="submit" class="submit-button"> Skicka remiss </button>
+</form>
+<script src="textcreator.js"></script>
+</body>
+<br>
+<footer> copyright bla bla bla 2022
+</footer>
+
+</html>
