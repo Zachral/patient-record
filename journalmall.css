@@ -52,18 +52,6 @@ form {
   margin: 0 auto 1.25rem auto;
   padding: 0.25rem;
 }
-.form-control {
-  display: flex;
-  width: 95%;
-  height: 2.375rem;
-  padding: 0.375rem 0.75rem;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
 .form-control-dropdown {
   display: flex;
   width: 97.5%;
@@ -77,105 +65,10 @@ form {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.input-checkbox-left {
-  display: inline-block; 
-  margin-right: 7rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right {
-  display: inline-block; 
-  margin-left: 3rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-nacke {
-  display: inline-block; 
-  margin-left: 7.1rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-axel {
-  display: inline-block; 
-  margin-left: 8.2rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-arm {
-  display: inline-block; 
-  margin-left: 8.1rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-hand{
-  display: inline-block; 
-  margin-left: 7.5rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-brost{
-  display: inline-block; 
-  margin-left: 7.6rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-skuldra{
-  display: inline-block; 
-  margin-left: 6.4rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-rygg{
-  display: inline-block; 
-  margin-left: 7.6rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-buk{
-  display: inline-block; 
-  margin-left: 8.3rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-rumpa{
-  display: inline-block; 
-  margin-left: 4rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-kon{
-  display: inline-block; 
-  margin-left: 8.15rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-ben{
-  display: inline-block; 
-  margin-left: 8.15rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-checkbox-right-fot{
-  display: inline-block; 
-  margin-left: 8.5rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-  }
-.input-text {
-  min-height: 120px;
-  width: 97.5%;
-  padding: 0rem;
-  resize: vertical;
-  border-radius: 0.25rem; 
-  font-family: "Poppins", helvetica; 
-}
-.flexbox{ 
-display: flex;
-justify-content: space-around; 
-}
+
 .submit-button {
-  display: block;
-  width: 97.5%;
+  margin-left: 20rem;
+  width: 50%;
   padding: 0.75rem;
   background: lightgreen;
   color: inherit;
@@ -183,4 +76,12 @@ justify-content: space-around;
   cursor: pointer;
   font-family: "Poppins", helvetica;
   font-size: 18px; 
+}
+p {
+  background: var(--whitecolor); 
+  opacity: 0.8;
+  padding: 1.5rem 0.1rem;
+  border-radius: 0.25rem; 
+  width: 73%; 
+  margin-left: 13.5%; 
 }
