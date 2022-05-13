@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,11 +16,11 @@
   <label for="therapy">Vilken typ av system har patienten?</label>
   <br>
   <select name="therapy" id="therapy" class="form-control-dropdown" required>
-    <option value="scs">Ryggmärgsstimulering (scs)</option>
-    <option value="drg">Dorsalrotsgangliestimulering (DRG)</option>
-    <option value="ons">Occipitalnervstimulering (ONS)</option>
-    <option value="reactiv8">Återuppbyggande av muskelfunktion (Reaciv8)</option>
-    <option value="subcutan">Subcutanstimulering</option>
+    <option value="scs">ryggmärgsstimulering (scs)</option>
+    <option value="drg">dorsalrotsgangliestimulering (DRG)</option>
+    <option value="ons">occipitalnervstimulering (ONS)</option>
+    <option value="reactiv8">återuppbyggande av muskelfunktion (Reaciv8)</option>
+    <option value="subcutan">subcutanstimulering</option>
   </select>
   <br>
  <label for="ipg">Vilken IPG?</label>
@@ -65,25 +66,29 @@
         <br>
         <select name="extention" id="extention" class="form-control-dropdown" required>
           <option value="yes">Ja</option>
-          <option value="no">nej</option>
+          <option value="no">Nej</option>
         </select>
   </div>
   <div class="form-group">
         <label for="impedance">Hur ser impedanserna ut?</label>
         <br>
         <select name="impedance" id="impedance" class="form-control-dropdown" required>
-          <option value="1">Utan anmärkning</option>
-          <option value="2">Med anmärkning</option>
+          <option value="1">utan anmärkning</option>
+          <option value="2">med anmärkning</option>
         </select>
   </div>
   <div class="form-group">
-    <label id="current" for="current">Hur mycket ström är kvar i IPGn?</label>
-    <input type="text" name="current" id="current" class="form-control" placeholder="">
-    </input>
-  </div>
-      <button type="submit" id="submit" class="submit-button"> Skicka remiss </button>
+    <label for="mri">Är systemet MR-kompatibelt</label>
+    <br>
+    <select name="mri" id="mri" class="form-control-dropdown" required>
+      <option value="yes">Ja</option>
+      <option value="no">Nej</option>
+    </select>
+</div>
+      <button type="generate" id="generate" class="submit-button"> Generera text </button>
 </form>
 <script src="textcreator.js"></script>
+
 </body>
 <br>
 <footer> copyright bla bla bla 2022
