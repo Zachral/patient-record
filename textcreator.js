@@ -12,10 +12,13 @@ function produceText(e) {
     let ipg = document.getElementById("ipg");
     let ipgText = ipg.options[ipg.selectedIndex].text;
 
-//Determine what the output for ipgText will be at the end of the function
-    let leads = document.getElementById("number-of-leads");
-    let leadsText = leads.options[leads.selectedIndex].text;
+//Determine what the output for numLeadsText will be at the end of the function
+    let numLeads = document.getElementById("number-of-leads");
+    let numLeadsText = numLeads.options[numLeads.selectedIndex].text;
 
+//Determine what the output for leadsText will be at the end of the function
+    let leads = document.getElementById("lead");
+    let leadsText = leads.options[leads.selectedIndex].text;
 
 //Determine what the output for extentionTextFunc will be at the end of the function
     let extention = document.getElementById("extention");
@@ -45,7 +48,7 @@ function produceText(e) {
 //Creates new element with the output text and previously determined variables. 
     let para = document.createElement("p");
         para.innerText = ("Patienten har ett system för " + therapyText + ", implaterat. IPGn är " + ipgText + " med " 
-            + leadsText + " elektrod(er). " + selectExtentionText() + " Impedanserna är " + impedanceText + ". " + selectMriText());
+            + numLeadsText + " elektrod(er) av typen " + leadsText + ". " + selectExtentionText() + " Impedanserna är " + impedanceText + ". " + selectMriText());
     document.body.appendChild(para);
     
 //Makes the paragraph stay visiable on the html-page
